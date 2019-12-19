@@ -1,0 +1,21 @@
+{
+    "name": "jlx/joincontent-custom-php-sdk",
+    "description": "内容中台php版sdk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "靳立醒",
+            "email": "877732380@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "JoinContentSdk\\": "src/"
+        }
+    }
+}
