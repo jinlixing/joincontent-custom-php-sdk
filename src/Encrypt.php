@@ -21,7 +21,7 @@ class Encrypt
         ];
         ksort($arr);
 
-        return sha1(implode('&', $arr));
+        return sha1(http_build_query($arr));
     }
 
     /**
