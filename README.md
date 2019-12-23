@@ -80,3 +80,5 @@ commentCount|integer|是|评论量
   ]
 ]
 ```
+
+#### 注：验签需要使用 laravel 的 env 方法获取 app_secret，所以建议在 laravel 框架中使用
