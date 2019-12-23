@@ -35,6 +35,10 @@ description|string|是|文章简介或视频描述
 ```php
 JoinContent::statistics($data)
 ```
+- 返回数据字段
+    - code：返回码，默认 200
+    - message：错误信息，默认为空即可
+    - data：返回数据，二维数组
 - 每条数据字段如下：
 
 名称|类型|必须|备注

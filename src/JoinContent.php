@@ -17,7 +17,7 @@ class JoinContent
      * @param array $data
      * @param string $app_id
      * @param string $app_secret
-     * @return false|string
+     * @return string
      * @throws \Exception
      */
     public static function statistics(array $data, string $app_id, string $app_secret)
@@ -33,17 +33,11 @@ class JoinContent
             if (count(array_diff($keys, self::$keys)) != 0) throw new \Exception('数据格式错误');
         }
 
-//        $timestamp = time();
-//        $sign = Encrypt::sign($app_id, $app_secret, $timestamp);
-//
-//        return json_encode([
-//            'app_id'=>$app_id,
-//            'timestamp'=>$timestamp,
-//            'sign'=>$sign,
-//            'data'=>$data
-//        ]);
-
-        return json_encode($data);
+        return json_encode([
+            'code' => 200,
+            'message' => '',
+            'data'=>$data
+        ]);
     }
 
     /**
